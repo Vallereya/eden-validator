@@ -1,5 +1,5 @@
 # EDEN Validator
-Mean't to validate the core idea of time dilation within the world model for the **EDEN PROJEKT**.
+Meant to validate the core idea of time dilation within the world model for the **EDEN PROJEKT**.
 
 ## 📝 Overview
 - Core Physics Engine: Bullet Physics 3.x
