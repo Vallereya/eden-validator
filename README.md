@@ -1,13 +1,13 @@
 # EDEN Validator
 Mean't to validate the core idea of time dilation within the world model for the **EDEN PROJEKT**.
 
-## Overview
+## 📝 Overview
 - Core Physics Engine: Bullet Physics 3.x
 - Build System: CMake 3.15+ & C++17
 - Compiler: GCC 11+ or Clang 13+ (Use `-ffp-contract=off` flag for determinism)
 - Profiling Tools: perf (Linux), Valgrind, and Tracy (optional).
 
-## Setup
+## ⚙️ Setup
 ### Ubuntu/Debian Linux
 ```sh
 # Update package lists
@@ -48,7 +48,7 @@ brew install valgrind
 pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake mingw-w64-x86_64-bullet
 ```
 
-## Project Structure
+## ✨ Project Structure
 ```sh
     eden-validator/
         ├── CMakeLists.txt
@@ -62,7 +62,7 @@ pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake mingw-w64-x86_64-bullet
         └── README.md
 ```
 
-## Build & Run
+## 🏗️ Build & Run
 ```sh
 # Create build directory
 mkdir -p eden-validator/src
@@ -87,7 +87,7 @@ make -j$(nproc)
 ./eden_validator
 ```
 
-## Performance Tuning Flags
+## ⚡Performance Tuning Flags
 ### For Maximum Speed (validation testing)
 ```sh
 cmake -DCMAKE_BUILD_TYPE=Release \
@@ -102,7 +102,7 @@ cmake -DCMAKE_BUILD_TYPE=Release \
       ..
 ```
 
-## Expected Results
+## 🎯 Expected Results
 ### Success Criteria
 #### Phase 1: Speed Benchmarks
 
@@ -125,7 +125,7 @@ cmake -DCMAKE_BUILD_TYPE=Release \
 🚩 Checkpoint rollback produces different outcomes <br>
 🚩 Memory usage grows unbounded <br>
 
-## Profiling Commands
+## 🔎 Profiling Commands
 ### CPU Profiling with perf (Linux)
 ```sh
 # Record
@@ -154,7 +154,7 @@ ms_print massif.out.<pid>
 for i in {1..5}; do time ./eden_validator; done
 ```
 
-## Troubleshooting
+## 🔧 Troubleshooting
 ### "Bullet not found"
 ```sh
 # Manual installation
@@ -165,3 +165,10 @@ cmake .. -DBUILD_SHARED_LIBS=ON
 make -j$(nproc)
 sudo make install
 ```
+
+## ⚖️ License
+*© 2025 Vallereya* <br>
+All rights reserved. <br>
+
+*Code and Contributions have **MIT License**. <br>
+See **LICENSE** for more information.* <br>
